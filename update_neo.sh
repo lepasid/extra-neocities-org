@@ -12,6 +12,11 @@ while :; do
         break
     fi
 
+    echo "# Optional Package - Neocities
+# Repository: https://github.com/MeFinity/Neocities-Host
+198.51.233.100 neocities.org
+198.51.233.100 www.neocities.org
+198.51.233.100 blog.neocities.org" >> hosts
     echo "$output" | sed "s|^https://|198.51.233.100 |" | sort -u >> hosts
 done
 
