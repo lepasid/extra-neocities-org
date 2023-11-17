@@ -20,5 +20,8 @@ jobs:
         git config --global user.name "GitHub Actions"
 
         git remote set-url origin "https://${{ secrets.GH_TOKEN }}@github.com/MeFinity/Neocities-Host.git"
+
+        ls -la
+        cat hosts
         
-        git diff --quiet || { git add hosts && git commit -m "Update hosts" && git push origin HEAD:main; }
+        git diff --quiet || { git add hosts && git commit -m "Update Neo hosts file" && git push origin HEAD:main; }
