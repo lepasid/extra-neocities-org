@@ -25,4 +25,4 @@ jobs:
 
         git add hosts
         git commit -m "Update hosts"
-        git push origin HEAD:main
+        git push origin HEAD:MeFinity-patch-1
