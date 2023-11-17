@@ -21,6 +21,6 @@ jobs:
         
         git remote set-url origin https://$GH_TOKEN@github.com/MeFinity/Neocities-Host.git
 
-        git add neohosts.txt
+        git add hosts
         git commit -m "Update Neo hosts file"
         git push origin HEAD:main
