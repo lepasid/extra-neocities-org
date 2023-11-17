@@ -15,12 +15,13 @@ jobs:
 
     - name: Run Update Script
       run: |
-      git rm hosts
-        ./update_neo.sh
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
 
         git remote set-url origin "https://${{ secrets.GH_TOKEN }}@github.com/MeFinity/Neocities-Host.git"
+
+        git rm hosts
+        ./update_neo.sh
 
         git add hosts
         git commit -m "Update hosts"
