@@ -1,6 +1,6 @@
 #!/bin/bash
 
-current_page=1
+current_page=0
 
 while :; do
     current_page=$((current_page + 1))
