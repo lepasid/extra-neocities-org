@@ -1,15 +1,9 @@
 #!/bin/bash
 
-echo "# Optional Package - Neocities
-# Repository: https://github.com/MeFinity/Neocities-Host
-$NEOCITIES_IP neocities.org
-$NEOCITIES_IP www.neocities.org
-$NEOCITIES_IP blog.neocities.org" > hosts
-
 NEOCITIES_IP="198.51.233.100"
-USER_AGENT="Neocities Unblocker [1] by KINI/1.4"
+USER_AGENT="Neocities Unblocker [1] by KINI/1.5"
 concurrent_requests=5
-max_page=500
+max_page=250
 min_page=1
 
 for ((current_page = 1; current_page < max_page; current_page++)); do

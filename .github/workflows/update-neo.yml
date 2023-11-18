@@ -28,6 +28,12 @@ jobs:
         ./parallel-update-4.sh &
         ./parallel-update-5.sh &
         ./parallel-update-6.sh &
+        ./parallel-update-7.sh &
+        ./parallel-update-8.sh &
+        ./parallel-update-9.sh &
+        ./parallel-update-10.sh &
+        ./parallel-update-11.sh &
+        ./parallel-update-12.sh &
 
         wait
 

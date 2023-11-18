@@ -1,1 +1,1 @@
-touch temphosts{1..6}
+touch temphosts{1..12}
