@@ -15,7 +15,7 @@ for ((current_page = 2001; current_page < max_page; current_page++)); do
 
     echo -ne "[5].................($current_page)\r"
 
-    echo "$output" | sed "s|^https://|$NEOCITIES_IP |" | sort -u >> /temp/temphosts5 &
+    echo "$output" | sed "s|^https://|$NEOCITIES_IP |" | sort -u >> temphosts5 &
 
     if ((current_page % concurrent_requests == 0)); then
         wait

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mkdir -p /temp/
-
 echo "# Optional Package - Neocities
 # Repository: https://github.com/MeFinity/Neocities-Host
 $NEOCITIES_IP neocities.org
@@ -23,7 +21,7 @@ for ((current_page = 1; current_page < max_page; current_page++)); do
 
     echo -ne "[1].................($current_page)\r"
 
-    echo "$output" | sed "s|^https://|$NEOCITIES_IP |" | sort -u >> /temp/temphosts1 &
+    echo "$output" | sed "s|^https://|$NEOCITIES_IP |" | sort -u >> temphosts1 &
 
     if ((current_page % concurrent_requests == 0)); then
         wait
