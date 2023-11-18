@@ -1,6 +1,7 @@
 #!/bin/bash
 
 output_file="hosts"
+NEOCITIES_IP="198.51.233.100"
 
 echo "# Optional Package - Neocities
 # Repository: https://github.com/MeFinity/Neocities-Host
