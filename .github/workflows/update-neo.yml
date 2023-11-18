@@ -2,7 +2,7 @@ name: Update Neo
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 jobs:
@@ -13,15 +13,26 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Run Update Script
+    - name: Run Update Scripts in Parallel
       run: |
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
 
         git remote set-url origin "https://${{ secrets.GH_TOKEN }}@github.com/MeFinity/Neocities-Host.git"
 
+        ./mkdir.sh
+
+        ./parallel-update-1.sh &
+        ./parallel-update-2.sh &
+        ./parallel-update-3.sh &
+        ./parallel-update-4.sh &
+        ./parallel-update-5.sh &
+        ./parallel-update-6.sh &
+
+        wait
+
         git rm hosts
-        ./update_neo.sh
+        ./merge.sh
 
         git add hosts
         git commit -m "Update hosts"
