@@ -1,4 +1,3 @@
-# Neocities Hostfile
-By using a hostfile you can bypass Indonesia's censorship  
-<br>
-This updates automatically every week, @ me on Discord if you want me to trigger an update
+# Paket extra: neocities.org
+hosts file tambahan untuk situs neocities.org<br>
+Repository ini memakai Github Actions untuk mengotomatiskan updatenya

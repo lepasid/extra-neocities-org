@@ -3,8 +3,8 @@
 output_file="hosts"
 NEOCITIES_IP="198.51.233.100"
 
-echo "# Optional Package - Neocities
-# Repository: https://github.com/MeFinity/Neocities-Host
+echo "# [Paket Extra - neocities.org]
+# Repository: https://github.com/lepasid/extra-neocities-org
 $NEOCITIES_IP neocities.org
 $NEOCITIES_IP www.neocities.org
 $NEOCITIES_IP blog.neocities.org" > "$output_file"

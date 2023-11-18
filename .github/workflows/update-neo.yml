@@ -1,4 +1,4 @@
-name: Update Neo
+name: Update Hosts
 
 on:
   schedule:
@@ -20,20 +20,20 @@ jobs:
 
         git remote set-url origin "https://${{ secrets.GH_TOKEN }}@github.com/MeFinity/Neocities-Host.git"
 
-        ./mkdir.sh
+        ./touch.sh
 
-        ./parallel-update-1.sh &
-        ./parallel-update-2.sh &
-        ./parallel-update-3.sh &
-        ./parallel-update-4.sh &
-        ./parallel-update-5.sh &
-        ./parallel-update-6.sh &
-        ./parallel-update-7.sh &
-        ./parallel-update-8.sh &
-        ./parallel-update-9.sh &
-        ./parallel-update-10.sh &
-        ./parallel-update-11.sh &
-        ./parallel-update-12.sh &
+        ./runner-1.sh &
+        ./runner-2.sh &
+        ./runner-3.sh &
+        ./runner-4.sh &
+        ./runner-5.sh &
+        ./runner-6.sh &
+        ./runner-7.sh &
+        ./runner-8.sh &
+        ./runner-9.sh &
+        ./runner-10.sh &
+        ./runner-11.sh &
+        ./runner-12.sh &
 
         wait
 
