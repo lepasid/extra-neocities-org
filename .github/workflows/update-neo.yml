@@ -39,6 +39,7 @@ jobs:
 
         git rm -f hosts
         ./merge.sh
+        ./sort.sh
 
         git add hosts
         git commit -m "Update hosts"

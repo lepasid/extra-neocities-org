@@ -1,13 +1,7 @@
 #!/bin/bash
 
-output_file="hosts"
+output_file="hosts-sort"
 NEOCITIES_IP="198.51.233.100"
-
-echo "# [Paket Extra - neocities.org]
-# Repository: https://github.com/lepasid/extra-neocities-org
-$NEOCITIES_IP neocities.org
-$NEOCITIES_IP www.neocities.org
-$NEOCITIES_IP blog.neocities.org" > "$output_file"
 
 for temp_file in temphosts{1..12}; do
     if [ -e "$temp_file" ]; then
